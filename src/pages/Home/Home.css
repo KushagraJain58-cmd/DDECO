@@ -1,6 +1,4 @@
-/* * {
-  overflow-x: hidden;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
     overflow-x: hidden;
 }
@@ -12,13 +10,10 @@ main{
     flex-direction: column;
     height: 100%;
     position: relative;
-    /* margin-top: 16rem; */
+    /* margin-bottom: 9rem; */
 }
 
 main .cover {
-    /* height: 100%; */
-    /* overflow: hidden; */
-    /* width: 85rem; */
      width: 90%;
      position: absolute;
 }
@@ -40,7 +35,6 @@ main .title {
 }
 
 main .title h1 {
-    /* width: 38rem; */
     font-size: 6rem;
     font-weight: 500;
     letter-spacing: 0.3rem;
@@ -49,66 +43,172 @@ main .title h1 {
 }
 main .title p {
     font-size: 2.8rem;
-    /* width: 56rem; */
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.explore {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.explore-img {
+    position: absolute;
+    width: 60%;
+}
+.explore-img img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.explore-whole {
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explore-cont {
+    background-color: #fff;
+    width: 20%;
+    padding: 0.5rem 4rem 1rem 4rem;
+    text-align: left;
+    margin: 0;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+.explore-cont h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-num {
+    height: 6rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: #a6824a;
+    padding: 0 5px 0 5px;
 }
 
 @media screen and (max-width: 880px)  {
-        main .cover img {
-    height: 40rem;
-}
+    main .cover img {
+        height: 40rem;
+    }
     main .title h1 {
-    font-size: 5rem;
+        font-size: 5rem;
+    }
+    main .title p {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    .explore-img {
+        position: absolute;
+        width: 80%;
+    }
+    .explore-whole {
+    width: 90%;
 }
-main .title p {
-    font-size: 2.5rem;
-    margin: 0;
+    .explore-cont {
+    width: 25%;
+    padding: 0.5rem 4rem 1rem 4rem;
+    margin-left: 10%;
+    /* margin-top: 10rem; */
 }
 }
 
 @media screen and (max-width: 800px)  {
     main .title h1 {
-    font-size: 4rem;
-    letter-spacing: 0.2rem;
-    line-height: 80px;
-}
-main .title p {
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+        line-height: 80px;
+    }
+    main .title p {
+        font-size: 2rem;
+    }
+    .explore-cont {
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    }
+    .explore-cont h2 {
     font-size: 2rem;
 }
 }
 @media screen and (max-width: 640px)  {
-     main .cover img {
-    height: 35rem;
-}
+    main .cover img {
+        height: 35rem;
+    }
     main .title h1 {
-    font-size: 3.5rem;
-    letter-spacing: 0.2rem;
-    line-height: 80px;
+        font-size: 3.5rem;
+    }
+    main .title p {
+        font-size: 1.5rem;
+    }
 }
-main .title p {
+@media screen and (max-width: 550px) {
+    .explore-cont {
+         width: 30%;
+         /* margin-top: 12rem; */
+         padding: 0.2rem 2rem 0.2rem 2rem;
+    }
+    .explore-cont h2 {
     font-size: 1.5rem;
 }
+    .section-num {
+        height: 5rem;
+        font-size: 2rem;
+    }
 }
 @media screen and (max-width: 480px)  {
     main .title h1 {
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    line-height: 60px;
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    main .title p {
+        width: 70%;
+        margin-top: 10px;
+    }
+    .explore-img img {
+         height: 35rem;
+    }
 }
-main .title p {
-    width: 70%;
-    margin-top: 10px;
-    /* font-size: 1.2rem; */
-}
+@media screen and (max-width: 450px) {
+    .explore-cont {
+         width: 40%;
+         /* margin-top: 18rem; */
+         padding: 0.2rem 2rem 0.2rem 2rem;
+    }
+} 
+@media screen and (max-width: 400px) {
+    .section-num {
+        margin-top: 3rem;
+    }
+    .explore-img img {
+         height: 30rem;
+    }
 }
 @media screen and (max-width: 360px)  {
     main .title h1 {
-    font-size: 2.5rem;
-    letter-spacing: 0.2rem;
-    line-height: 60px;
+        font-size: 2.5rem;
+    }
+     .explore-cont h2 {
+    font-size: 1.2rem;
 }
-main .title p {
-    width: 70%;
-    margin-top: 10px;
-    /* font-size: 1.2rem; */
+.explore-cont p {
+    font-size: 0.9rem;
 }
 }
+
