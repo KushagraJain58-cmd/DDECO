@@ -12,7 +12,9 @@ const Home = () => {
 					<img src={image1} alt="" />
 				</div>
 				<div className="title">
-					<h1>DD ECO SOURCING</h1>
+					<h1>
+						DD ECO <br />SOURCING
+					</h1>
 					<p>Cotton powering circular economy</p>
 				</div>
 			</main>

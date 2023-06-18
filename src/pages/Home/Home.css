@@ -1,7 +1,13 @@
+/* * {
+  overflow-x: hidden;
+} */
+body{
+    overflow-x: hidden;
+}
 main{
-    /* width: 90%; */
+    /* width: 100%; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     height: 100%;
@@ -10,12 +16,15 @@ main{
 }
 
 main .cover {
-     width: 85rem;
+    /* height: 100%; */
+    /* overflow: hidden; */
+    /* width: 85rem; */
+     width: 90%;
      position: absolute;
 }
 
 main .cover img {
-    height: 60rem;
+    height: 50rem;
     width: 100%;
     object-fit: cover;
     position: relative;
@@ -23,14 +32,15 @@ main .cover img {
 }
 
 main .title {
- 
  position: relative;
  margin-top: 10rem;
  color: #914524;
+ width: 85%;
+ margin-left: 4rem;
 }
 
 main .title h1 {
-    width: 38rem;
+    /* width: 38rem; */
     font-size: 6rem;
     font-weight: 500;
     letter-spacing: 0.3rem;
@@ -39,5 +49,66 @@ main .title h1 {
 }
 main .title p {
     font-size: 2.8rem;
-    width: 56rem;
+    /* width: 56rem; */
+}
+
+@media screen and (max-width: 880px)  {
+        main .cover img {
+    height: 40rem;
+}
+    main .title h1 {
+    font-size: 5rem;
+}
+main .title p {
+    font-size: 2.5rem;
+    margin: 0;
+}
+}
+
+@media screen and (max-width: 800px)  {
+    main .title h1 {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    line-height: 80px;
+}
+main .title p {
+    font-size: 2rem;
+}
+}
+@media screen and (max-width: 640px)  {
+     main .cover img {
+    height: 35rem;
+}
+    main .title h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 80px;
+}
+main .title p {
+    font-size: 1.5rem;
+}
+}
+@media screen and (max-width: 480px)  {
+    main .title h1 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    line-height: 60px;
+}
+main .title p {
+    width: 70%;
+    margin-top: 10px;
+    /* font-size: 1.2rem; */
+}
+}
+@media screen and (max-width: 360px)  {
+    main .title h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 60px;
+}
+main .title p {
+    width: 70%;
+    margin-top: 10px;
+    /* font-size: 1.2rem; */
+}
 }
