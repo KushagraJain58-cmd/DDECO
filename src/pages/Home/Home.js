@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar';
 import image1 from '../../assets/images/home/1.webp';
 import image2 from '../../assets/images/home/2.webp';
+import image3 from '../../assets/images/home/3.webp';
 import './Home.css';
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
 					<p>Cotton powering circular economy</p>
 				</div>
 			</main>
-			<div className="explore-whole">
+			<div className="content-whole explore-whole">
 				<div className="explore-cont">
 					<h2>Explore The Topics</h2>
 					<p>
@@ -32,12 +33,33 @@ const Home = () => {
 					<h2>01</h2>
 				</div>
 			</div>
-
-			<div className="explore">
-				<div className="explore-img">
-					<img src={image2} alt="explore" />
+			<section>
+				<div className="section-img-cont">
+					<div className="explore-img section-img">
+						<img src={image2} alt="explore" />
+					</div>
+				</div>
+			</section>
+			<div className="content-whole story-whole">
+				<div className="explore-cont story-cont">
+					<h2>Read Our Story</h2>
+					<p>
+						Read Our Story Growing up in Delhi, we witnessed that our home town gradually becoming one of
+						the most polluted cities in the world. Day by day we experienced the receding air quality,
+						disappearing wildlife, growing noise pollution and our depleting water source.
+					</p>
+				</div>
+				<div className="section-num two">
+					<h2>02</h2>
 				</div>
 			</div>
+			<section>
+				<div className="section-img-cont">
+					<div className="story-img section-img">
+						<img src={image3} alt="explore" />
+					</div>
+				</div>
+			</section>
 		</Fragment>
 	);
 };
